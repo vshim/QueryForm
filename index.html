@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div class="query">
+			<h2>Задать вопрос</h2>
+			<form action="https://60376bfd5435040017722533.mockapi.io/form" method="post" target="area">
+				<p><input class="query__input-text" type="text" name="name" required placeholder="Фамилия Имя Отчество *" pattern="^[А-Яа-яЁё\s-]+$"></p>
+				<p><input class="query__input-text" type="tel" name="phone" required placeholder="Телефон *" pattern="^[0-9\s+-]+$"></p>
+				<p><input class="query__input-text" type="email" name="email" placeholder="Email"></p>
+				<p><input class="query__input-submit" type="submit" value="ОТПРАВИТЬ ЗАПРОС"></p>
+			</form>
+		</div>
+		<p><iframe name="area" width="500" height="50"></iframe></p>
+	</body>
+</html>
